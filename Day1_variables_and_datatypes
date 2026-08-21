@@ -1,0 +1,104 @@
+# DAY1 STARTS HERE
+#Variables 
+name="Tooba Abbasi"    #sstring
+age= 23              #integer
+cgpa = 1.83             #float
+isengineer = True        #bool
+print (name)             #print to see output 
+print (age)
+print (cgpa)
+print (isengineer)
+
+print(type(name))          #this command to check the datatype of integer 
+print(type(age))
+print(type(isengineer))
+print(type(cgpa))
+
+#Basic Arithematic functions 
+#variables 
+x=10
+y= 15 
+a= 12
+b= 13
+#addition 
+print (a+b+x+y)
+sum = a+b
+print (  a+b)
+print ( sum )
+print (x+y)
+#subtraction
+print (a-b-x-y )
+subtract = a-b
+print (subtract)
+print ( x-y)
+#multiplication
+print (a*b*x*y)
+multply = a*b
+print (multply)
+
+print ( x*y )
+#division
+print (a/b  )
+divide = x/y
+print (divide)
+print ( a/b)
+#modulo
+print (a%b)
+modulo = a%b
+print (modulo)
+print (x%y)
+#floor division
+print (x//y)
+print (a//b)
+# power
+power= a**b
+ # print("label =", value) thats how you do it 
+print("sum =", a + b) 
+print("sbtract=", a - b) 
+print ("multiply = ", a*b)
+print ("divide = ",a/b )
+print("modulo = " , a%b )
+print ("floor division = ", a//b)
+print ("power = ", a**b)
+print ("                                 ")
+print ("                ")
+print ("sum=",sum)
+print("subtract=",subtract)
+print ("multiply =" ,multply)
+print ("modulo = " ,modulo)
+print ("divide =", divide)
+your_name = "Tooba Abbasi " 
+your_university = "NUST,Islamabad"
+your_cgpa = 1.93
+your_degree= "bachelors"
+your_graduation_year = 2026
+print (your_cgpa)
+print(your_name)
+print(your_graduation_year)
+print(your_degree)
+print ("       ")
+print ("       ")
+print ("       ")
+#print  Next: input() — making Python interactive
+print ("  ")
+print("p1")
+name = input ("what i your name?")
+print ("hello", name)
+print ("p2")
+name1 = input ("my name is ")
+print ("hey", name1)
+cgpa1= 1.93
+cgpa1 = input ("my cgpa is" )
+
+print (cgpa1)
+university1= "nust"
+university1=input ("my university is" )
+print(  university1)
+print ( "Hi" , name1+ "and"  +   cgpa1 +"and"+  university1)
+print ("hello, "  + name1 + "my cgpa is " + str(cgpa1) + "my university is " + your_university )
+
+#ADDITIONAL PRACTICE
+
+cgpa2 = float(input("My CGPA is "))
+print(cgpa2)
+print (type(cgpa2))
