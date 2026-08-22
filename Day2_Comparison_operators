@@ -1,0 +1,94 @@
+#DAY_02
+#Comparison_Operators 
+
+age= 23
+print (age>20)       #greater then  #true
+print (age<20)       #less then      #false
+print (age>= 20)     #greater then or equal to     #true
+print (age<=20)      #less then or equal to       #false
+print (age==20)      #equal to         #false
+print (age !=20)     #not equal to    #true
+print ("                         ")
+
+#result of comparison operators is always a boolean value either true or false 
+
+age= 24
+if age>=24 :
+ print ("you are an adult")
+ print ("you are eligible for voting")
+
+age=17
+if age>= 17 :
+  print("you are an adult")
+else:
+   print ("you are under 17")  
+
+#COMPARISON USING ALREADY DEFINED VARIABLE
+CGPA= 8.7
+if CGPA>= 8.0 :
+    print ("you are eligible for scholarship") 
+else:
+     print ("you are not eligible for scholarship")
+
+
+#creating a program that asks of tragetted cgpa for admission and checks if the user is eligible for admission or not
+cgpa = float(input ("enter your cgpa for admission: "))
+print  ("Your CGPA : ",cgpa)
+if cgpa >= 7.5:
+ print ("Congrats!you are eligible for admission")
+else :
+ print ("you are not eligible for admission")
+
+
+ #lets get ahead
+ cgpa = float(input("Enter your CGPA: "))
+
+if cgpa >= 3.5:
+    print("Excellent")
+elif cgpa >= 3.0:
+    print("Good")
+elif cgpa >= 2.5:
+    print("Average")
+else:
+    print("Needs improvement")
+#task 2 
+marks1= int (input ("enter your marks: "))
+print ("your makrs for the subject are ", marks1)
+
+marks= int (input ("enter your marks: "))
+if marks >= 90 :
+   print ("Grdae = A")
+elif marks >=80:
+    print ("Grade = B")
+elif  marks>=70:
+    print ("Grade = C")
+elif marks >=60:
+    print ("Grade =D")
+else :
+ print("Grade = F")
+   
+#percentage = float 
+percentage= float (input ("enter your percentage : "))
+if percentage >= 48:
+   print ("PASS")
+else:
+   print ("FAIL")
+
+## program that ask user for name age and gpa and then checks further
+name=input("Enter your name: ")
+age=int(input ("enter your age :"))
+gpa = float (input ("enter your gpa: "))
+if age >=18 :
+ print ("you met requirement ")
+else :
+ print ("no met requiremnt :")
+
+if gpa >= 3.0 :
+   print ("you met requirement ")
+else:
+   print ("not met requirement ")
+
+if age >= 29 and gpa >= 2.8 :
+    print("You meet all requirements")
+else:
+    print("You do not meet all requirements")

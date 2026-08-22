@@ -1,0 +1,32 @@
+#Day3_logic operators
+#AND OPERATOR
+cgpa=float(input ("enter your cgpa :"))
+age=int(input("enter your age :")   )
+
+if age >=20 and cgpa >= 3.5 :
+    print ("You meet all the requirments")
+else:
+    print ("You do not meet the requirments")
+#TASK 2 
+university=input("enter your university name :")
+percentile= float(input("enter your percentile :"))
+if university == "MIT" and percentile >= 45.7:
+   print ("wlecome onboards")
+else:
+   print ("you donot meet requirements")
+#Or operator
+has_card= False
+has_invitation= False
+if has_card or has_invitation:
+    print ("you can enter the party "  )
+else:
+   print ("you cannot enter the party ")
+
+#or case means one of conditions have to be true 
+#NOT operator
+is_student = False
+print (not is_student) # it will return true because is_student is false
+
+is_raining = True
+if not is_raining:
+    print ("you can go outside")
