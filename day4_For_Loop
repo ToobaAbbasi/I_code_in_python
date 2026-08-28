@@ -1,0 +1,60 @@
+for i in range (5):
+    print (i)
+for i in range (10):
+        print (i)
+n= 19
+for i in range (n+1):
+      print (i)
+
+for i in range (n+3):
+      print (i)
+for i in range (5):
+            print ("hello tooba")
+for i in range (3):
+                  print ("your are going great tooba")
+for i in range (2,7):
+      print (i)
+
+#for loop with if else conditioning
+marks = [85, 72, 91, 48, 63]
+
+for mark in marks:
+
+    if mark >= 90:
+        print(mark, "Excellent")
+
+    elif mark >= 80:
+        print(mark, "Very Good")
+
+    elif mark >= 60:
+        print(mark, "Pass")
+
+    else:
+        print(mark, "Fail")
+#ends
+#
+#Find numbers with multiple conditions
+for i in range(1, 31):
+
+    if i % 2 == 0 and i % 3 == 0:
+        print(i, "Divisible by both 2 and 3")
+
+    elif i % 2 == 0:
+        print(i, "Even")
+
+    elif i % 3 == 0:
+        print(i, "Divisible by 3")
+
+    else:
+        print(i, "Other")
+for i in range(1, 101):
+
+    if i % 7 == 0:
+        print("First number divisible by 7:", i)
+        break
+for i in range(1, 21):
+
+    if i % 2 != 0:
+        continue
+
+    print("Processing:", i)
