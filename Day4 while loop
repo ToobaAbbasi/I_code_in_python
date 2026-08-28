@@ -1,0 +1,80 @@
+#while condition:
+i = 1
+while i <= 5:  #while kay agay is condition
+    print(i)
+    i = i + 1  #increment condition
+    #ends
+i=1
+while i<= 4:
+    print(i)
+    i=i+1
+
+i=7
+n=9
+while i<n:
+ print("hello tooba ")
+ i= i + 1
+  #ends
+
+i=3
+n=1
+while i>n:
+ print("goodbye tooba")
+ i=i-1              #decrement 
+#ends
+i = 2
+while i <= 10:
+    print(i)
+    i = i + 2
+
+#the 3rd line put an end to the infinite continuation 
+#now continuiing while with other loops
+i = 1
+
+while i <= 10:
+
+    if i % 2 == 0:
+        print(i, "Even")
+    else:
+        print(i, "Odd")
+
+    i = i + 1
+#example Guess the number 
+#there is a secret number
+secret_number = 7
+#We want the user to keep guessing until they get it right.
+secret_number = 7
+guess = int(input("Guess the number: "))
+
+while guess != secret_number:
+
+    if guess < secret_number:
+        print("Too low!")
+
+    elif guess > secret_number:
+        print("Too high!")
+
+    guess = int(input("Guess again: "))
+
+print("Correct! You guessed it!")
+
+i = 1
+
+while i <= 10:
+
+    if i == 6:
+        break
+
+    print(i)
+
+    i = i + 1
+i = 1
+
+while i <= 10:
+
+    print(i)
+
+    if i == 6:
+        break
+
+    i = i + 1
