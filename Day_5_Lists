@@ -1,0 +1,359 @@
+from asyncio import Task
+
+
+names = ["Tooba", "Ali", "Ahmed", "Sara"]
+
+print(names)
+
+name = ["ayesha", "Hassan", "Zainab"]
+print(name)
+
+bakeryitems = ["bread", "cake", "cookies", "muffins"]
+print(bakeryitems)
+
+books = ["talaash", "ikigai","sahab nama", "the alchemist"]
+print (books)
+
+SystemError = ["memory error", "recursion error", "floating point error"]
+print(SystemError)
+
+marks = [90, 85, 78, 92, 88]
+print(marks)
+
+scores = [32,23,67,97,89,100 ,11000]
+print(scores)
+
+
+identity=["ayesha",23, "NUST",4.9/5,"female","karachi", "football","Pakistan"]
+print (identity)
+
+
+#why lists are used in python?
+marks = [85, 72, 91, 64, 78]
+
+for mark in marks:
+    print(mark)
+    #instead of individual access , access from one storage  or A list allows us to store multiple related values in one variable and access/process them using loops
+
+
+
+for mark in marks:
+    if mark >= 90:
+        print("Excellent - lDay_5_Lisys:42")
+    elif mark >= 80:
+        print("Very Good - lDay_5_Lisys:44")
+    elif mark >= 70:
+        print("Good - lDay_5_Lisys:46")
+    else:
+        print("Needs Improvement - lDay_5_Lisys:48")
+
+#indexing in lists
+#zero based indexing
+names = ["Tooba", "Ali", "Ahmed", "Sara"]
+print(names[0])
+print(names[1])
+print(names[2])
+print(names[3])
+
+#using already define list of identity and books
+print(identity[0])
+print(identity[1])
+print(identity[2])
+print(identity[3])
+
+print(books[0])
+print(books[1])
+print(books[2])
+print(books[3])
+
+
+#Negative indexing in lists
+print(names[-1])
+print(names[-2])
+print(names[-3])
+print(names[-4])
+
+
+print (identity[-1])
+print (identity[-2])
+print (identity[-3])
+print (identity[-4])
+print (identity[-5])
+
+print (books[-1])
+print (books[-2])
+print (books[-3])
+print (books[-4])
+
+
+#chaning a list item
+#lists are mutable and mutable means we can change the value of a list item
+names1 = ["Tooba", "Ali", "Ahmed"]
+
+names1[1] = "Yazdaan"
+
+print(names1)
+
+names1[2] = "Zainab"
+print(names1)
+
+stationary = ["pen", "pencil", "eraser", "sharpener"]
+
+stationary[2] = "marker"
+print(stationary)
+
+#finding the length of a list
+#len() python gives us len 
+names = ["Tooba", "Ali", "Ahmed", "Sara"]
+
+print(len(names))
+
+names = ["Tooba", "Ali", "Ahmed", "Sara"]
+
+for i in range(len(names)):   #in this case range will give us the index of the list and len will give us the length of the list
+    print(names[i])
+
+
+#loops in a lists
+names = ["Tooba", "Ali", "Ahmed", "Sara"]
+
+for name in names:
+    print(name)
+
+identity2= ["zugra",30,"KFUIT"]
+for item in identity2:
+    print(item)
+    print(len(identity2))  #this will print the length of the list in every iteration of the loop
+    print (identity2[2])  #this will print the 4th character of each item in the list, but it will give an error for integer items
+  #  print (item[0])  #this will print the first character of each item in the list, but it will give an error for integer items
+
+
+    #list+if loop
+    marks = [85, 45, 72, 91, 38]
+
+for mark in marks:
+
+    if mark >= 50:
+        print(mark, "PASS - lDay_5_Lisys:137")
+
+    else:
+        print(mark, "FAIL - lDay_5_Lisys:140")
+
+
+#new thing in lists
+    #adding an item to a list 
+    #append() method is used to add an item to the end of the list
+naames = ["Tooba", "Ali", "Ahmed"]
+naames.append("Sara")
+naames.append("malaika")
+naames.append("tina")
+print(naames)
+
+
+# after adding an item to a list we can remove an item from a list using remove() method
+namees = ["Tooba", "Ali", "Ahmed", "Sara"]
+
+namees.remove("Ali")
+
+print(namees)
+
+books = ["talaash", "ikigai","sahab nama", "the alchemist"]
+books.remove("ikigai")
+print(books)
+
+#times for tasks
+students = ["Tooba", "Ali", "Ahmed", "Sara", "Yazdaan"]
+#task#01
+print(students)   #entire list
+print(students[0]) #first 
+print(students[4])  #last
+students[1] = "hamza" #changing the second item
+print(students)
+students.append ("Ayesha") #adding an item to the end of the list
+print(students)
+students.remove("Ahmed") #removing an item from the list
+print(students)
+for student in students:
+    print(student)  #printing each item in the list
+
+
+#Tasknext
+marks = [45, 67, 89, 32, 76, 91, 54]
+print(marks)
+for mark in marks:
+    print (mark)
+    if mark>=50:
+     print(mark, "PASS - lDay_5_Lisys:186")
+    else:
+     print(mark, "FAIL - lDay_5_Lisys:188")
+
+    if mark>=90:
+        print (mark, "Grade = A* - lDay_5_Lisys:191")    
+    elif mark>=80:
+        print (mark,"Grade= A - lDay_5_Lisys:193")
+    elif mark>=70:
+        print (mark,"Grade= B - lDay_5_Lisys:195")
+    elif mark>=60:
+        print (mark,"Grade= C - lDay_5_Lisys:197")  
+    elif mark>=50:
+        print (mark,"Grade= D - lDay_5_Lisys:199")
+    else:   
+        print (mark,"Grade= F - lDay_5_Lisys:201")
+
+print("End of the program - lDay_5_Lisys:203")
+print("let's move to the next topic - lDay_5_Lisys:204")
+
+#nexts
+#inserting an item in a list at a specific index
+names = ["Tooba", "Ali", "Ahmed"]
+names.append("Sara")
+#list.insert(index, item)
+names.insert(1, "Zainab")
+print(names)
+
+names.insert(3, "yazdaan")
+names.insert(0, "Ayesha")
+print(names)
+
+#task
+students = ["Tooba", "Ali", "Ahmed", "Sara"]
+print (students)
+print(students[1])
+students.insert (1, "hamza")
+print(students)
+students.insert(3, "Ayesha")
+print(students)
+students.insert(0,"yazdaan")
+print(students)
+
+
+#pop means it removes the last item from the list and returns it. 
+# It can also remove an item at a specific index if provided.
+students = ["Tooba", "Ali", "Ahmed", "Sara"]
+students.pop(1)
+print(students)
+#remove func remove by value and pop remove by index
+removed_student = students.pop(1)   
+#this will remove the student at index 1 (which is "Ahmed") and 
+# store it in the variable removed_student
+print(removed_student)
+
+students = ["Tooba", "Ali", "Ahmed", "Sara", "Hamza"]
+print(students)
+students.pop()
+students.pop(2)
+print(students)
+removed_student = students.pop(2)
+print(removed_student)
+print(students)
+
+#task2
+numbers = [10, 20, 30, 40, 50]
+numbers.pop()
+print(numbers)
+removed_number = numbers.pop()
+print(removed_number)
+print(numbers)
+
+print ("End of the program - lDay_5_Lisys:258")
+print ("let's move to the next topic - lDay_5_Lisys:259")
+
+#deleting an item from a list using del statement
+students = ["Tooba", "Ali", "Ahmed", "Sara"]
+
+del students[1]
+
+print(students)
+
+students = ["Tooba", "Ali", "Ahmed", "Sara", "Hamza"]
+del students[1]
+print (students)
+del students[-1] #last item to delete the last item from the list
+print (students)
+
+# in or not in operator
+students6 = ["Tooba", "Ali", "Ahmed", "Sara"]
+print(students6)
+print("Tooba - lDay_5_Lisys:277" in students6)
+print("Tooba - lDay_5_Lisys:278" in students6)
+print ("Hamza - lDay_5_Lisys:279" in students6)
+#true 
+students6 = ["Tooba", "Ali", "Ahmed", "Sara"]
+print("Tooba - lDay_5_Lisys:282" in students6)
+print("Ali - lDay_5_Lisys:283" in students6)
+print("Hamza - lDay_5_Lisys:284" in students6)
+print("Tooba - lDay_5_Lisys:285" in students6)
+if "Hamza" not in students6:
+ print("Hamza is not in the list - lDay_5_Lisys:287")
+if "Tooba" not in students6:
+    print("Tooba is not in the list - lDay_5_Lisys:289")
+if "Tooba" in students6:
+    print("Tooba is in the list - lDay_5_Lisys:291")
+print ("end of not in nd in - lDay_5_Lisys:292")
+#sort means it arranges number in ascending order by default
+numbers21 = [50, 10, 40, 20, 30]
+numbers21.sort()
+print(numbers21)
+names21 =["Yazi", "Muskan", "Xenia", "Kainat ","Coar"]
+names21.sort()
+print(names21)
+numbers = [50, 10, 40, 20, 30]
+
+numbers.sort(reverse=True)
+names21.sort(reverse=True)
+print (names21)
+print(numbers)
+#Task
+numbers7 = [45, 12, 89, 34, 7, 56]
+numbers7.sort()
+print(numbers7)
+numbers7.sort(reverse=True)
+print (numbers7)
+names = ["Zainab", "Tooba", "Ali", "Ahmed", "Sara"]
+names.sort()
+print(names)
+print ("end - lDay_5_Lisys:315")
+#next function +Reverse()
+numbers7 = [45, 12, 89, 34, 7, 56]
+numbers7.reverse()
+print(numbers7)
+numbers = [30, 10, 50, 20, 40]
+numbers.reverse()
+print(numbers)
+numbers.sort()
+print(numbers)
+#count() function counts the number of occurrences of a specific item in the list
+numbers = [10, 20, 30, 10, 40, 10]
+print(numbers.count(10))
+print(numbers.count(2))
+#index() function returns the index of the first occurrence of a specific item in the list
+numbers = [10, 20, 30, 10, 40, 10]
+print(numbers.index(10))
+print(numbers.index(40))
+
+#list slicing 
+numbers0 = [10, 20, 30, 40, 50]
+print(numbers0[1:4]) #start from index 1 and go to index 4
+print(numbers0[:3]) #start from begining and go to index 3
+print(numbers0[2:5])    #start from index 2 and go to index 5
+numbers[:]
+print(numbers0[:]) #start from begining and go to end
+#list[start:stop:step]
+numbers = [10, 20, 30, 40, 50, 60]
+print(numbers[0:6:2])
+print(numbers[::2]) #:: start from begining and go to end with step 2
+print(numbers[-3:]) #negative slicing means start from the end and go to the beginning
+print(numbers[::-1]) #reverse the list using slicing
+print(numbers[1:7:2]) #complex slicing means start from index 1 and go to index 7 with step 2 
+
+
+print(numbers[5:1:-1]) #start from index 5 and go to index 1 with step -1 (reverse)
+
+#TASKKKKKK
+numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+print(numbers[1:4])
+print(numbers[5:9])
+print(numbers[::2])
+print(numbers[-1:0:-1])
+print(numbers[7:2:-2])
+print(numbers[7:3:-1])
